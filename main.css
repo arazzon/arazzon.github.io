@@ -1,0 +1,167 @@
+
+body {
+    background-image: url("blackStars.jpg");
+    background-position: center 10%;
+    background-size: unset;
+    background-origin: content-box;
+    font-family: 'Emilys Candy', cursive;
+}
+.title {
+    color: #ff3e3e;
+    text-align: center;
+    font-size: 120px;
+    position: relative;
+    top: 100px;
+}
+.heart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    -webkit-animation: heart 1s linear infinite;
+    animation: heart 1s linear infinite;
+}
+.heart:before, .heart:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-radius: 50% 50% 0 0;
+    width: 105px;
+    height: 150px;
+    background-color: #ff3e3e;
+}
+.heart:before {
+    left: 0;
+    -webkit-transform: rotate(-49deg);
+    transform: rotate(-49deg);
+}
+.heart:after {
+    right: 0;
+    -webkit-transform: rotate(49deg);
+    transform: rotate(49deg);
+}
+.heart span {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 35px;
+    height: 15px;
+    border-radius: 40%;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    z-index: 5;
+}
+.heart span:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 130%;
+    background-color: #ff3e3e;
+    height: 11px;
+    border-radius: 50% 50% 0 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@-webkit-keyframes heart {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+    30% {
+        -webkit-transform: translate(-50%, -50%) scale(1.1, 1.1);
+        transform: translate(-50%, -50%) scale(1.1, 1.1);
+    }
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+    75% {
+        -webkit-transform: translate(-50%, -50%) scale(1.1, 1.1);
+        transform: translate(-50%, -50%) scale(1.1, 1.1);
+    }
+    80% {
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+}
+
+@keyframes heart {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+    30% {
+        -webkit-transform: translate(-50%, -50%) scale(1.1, 1.1);
+        transform: translate(-50%, -50%) scale(1.1, 1.1);
+    }
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+    75% {
+        -webkit-transform: translate(-50%, -50%) scale(1.1, 1.1);
+        transform: translate(-50%, -50%) scale(1.1, 1.1);
+    }
+    80% {
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    font-family: 'Acme', sans-serif;
+
+    font-family: 'Balsamiq Sans', cursive;
+
+    font-family: 'Boogaloo', cursive;
+
+    font-family: 'Emilys Candy', cursive;
+
+    font-family: 'Hammersmith One', sans-serif;
+
+    font-family: 'Kalam', cursive;
+
+    font-family: 'Lalezar', cursive;
+
+    font-family: 'Mystery Quest', cursive;
+
+    font-family: 'Oregano', cursive;
+
+    font-family: 'Rancho', cursive;
+
+    font-family: 'Spicy Rice', cursive;
+
+    font-family: 'Sriracha', cursive;
+
+    font-family: 'Titan One', cursive;
+
+    font-family: 'Vast Shadow', cursive;
+
+
+*/
